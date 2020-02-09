@@ -1,4 +1,5 @@
 - hosts: all
+  become: yes
   tasks:
-       - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
-         shell: sudo -i && sh /home/lamvt/script_w06/tvc/playbook/vleague_encode.sh
+       - name: Encode 
+         shell: sh /home/lamvt/script_w06/tvc/playbook/vleague_encode.sh
